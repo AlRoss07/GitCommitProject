@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import simpleGit from "simple-git";
 import axios from "axios";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = process.env.REPO_OWNER;
